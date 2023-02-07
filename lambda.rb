@@ -5,20 +5,20 @@
 class Lambda < Formula
   desc "CLI for invoking AWS Lambda functions in a Unix pipeline-friendly way"
   homepage "https://github.com/aidansteele/lambda"
-  version "0.1.0"
+  version "0.1.1"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/aidansteele/lambda/releases/download/v0.1.0/lambda_Darwin_arm64.tar.gz"
-      sha256 "68e07e4259afd3e3c66e8fc36afda53c05303fc19fad56f91de3ae80c62494dd"
+      url "https://github.com/aidansteele/lambda/releases/download/v0.1.1/lambda_Darwin_arm64.tar.gz"
+      sha256 "01a3c4a6d1ec8c007855b5e1e0f471c134adb812f6af61b1e40ab96de9ebe8a1"
 
       def install
         bin.install "lambda"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/aidansteele/lambda/releases/download/v0.1.0/lambda_Darwin_x86_64.tar.gz"
-      sha256 "21f5b86f89ef2f482a4024ffb3432b354232d5f7283f70643417d90fe65958f1"
+      url "https://github.com/aidansteele/lambda/releases/download/v0.1.1/lambda_Darwin_x86_64.tar.gz"
+      sha256 "c5ec5eb1f49d8398b597ed47b2e802b568793bb6728a60b2c2b38b8a9856b1ad"
 
       def install
         bin.install "lambda"
@@ -27,17 +27,17 @@ class Lambda < Formula
   end
 
   on_linux do
-    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/aidansteele/lambda/releases/download/v0.1.0/lambda_Linux_arm64.tar.gz"
-      sha256 "ae156821dacfebcb635b5b660bf8099584eecea7ee809f0a9026b26fef793e62"
+    if Hardware::CPU.intel?
+      url "https://github.com/aidansteele/lambda/releases/download/v0.1.1/lambda_Linux_x86_64.tar.gz"
+      sha256 "6a35ec9ec9e3546e3b0cb0bb25d1c2d8ca4b1d3b861d1673f591fd7e87e8b447"
 
       def install
         bin.install "lambda"
       end
     end
-    if Hardware::CPU.intel?
-      url "https://github.com/aidansteele/lambda/releases/download/v0.1.0/lambda_Linux_x86_64.tar.gz"
-      sha256 "ef9d26ba95b03277c552f57dab77aa86a042e8226ad71c6739f6dc7978b3561e"
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/aidansteele/lambda/releases/download/v0.1.1/lambda_Linux_arm64.tar.gz"
+      sha256 "a8a8e3af953a749fbdcc474fff63db9192aece52b4a86d9a4c9386ada4ea047a"
 
       def install
         bin.install "lambda"
