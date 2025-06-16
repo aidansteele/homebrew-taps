@@ -2,7 +2,7 @@
 cask "secretenv" do
   desc "secretenv allows KMS-encrypted secrets to be stored in source control and used on desktop/containers"
   homepage "https://github.com/aidansteele/secretenv"
-  version "0.1"
+  version "0.1.1"
 
   livecheck do
     skip "Auto-generated on release."
@@ -12,23 +12,23 @@ cask "secretenv" do
 
   on_macos do
     on_intel do
-      url "https://github.com/aidansteele/secretenv/releases/download/0.1/secretenv_Darwin_x86_64.tar.gz"
-      sha256 "db0bb0f2be4bb9e432ff772eedb6aa0673b80945cb617507aa37870b6856cf95"
+      url "https://github.com/aidansteele/secretenv/releases/download/0.1.1/secretenv_Darwin_x86_64.tar.gz"
+      sha256 "26a12a6c0f70cd930979400f62f97491d68e2d533834d874b85e53bed928c787"
     end
     on_arm do
-      url "https://github.com/aidansteele/secretenv/releases/download/0.1/secretenv_Darwin_arm64.tar.gz"
-      sha256 "b210ae7e9b044b75a2b6e534993faf6eedfef5b85fa82dc3d9e48f44e3a9c836"
+      url "https://github.com/aidansteele/secretenv/releases/download/0.1.1/secretenv_Darwin_arm64.tar.gz"
+      sha256 "d521ff65773e70935d08e174b1f688c0b2d5fd3c9d69b7b1581a21f2594de961"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/aidansteele/secretenv/releases/download/0.1/secretenv_Linux_x86_64.tar.gz"
-      sha256 "cb2a2f63ef398928b9d2565bb4e4e6f26fcdb4e4accf2cbadb9e7d6b2c4251a4"
+      url "https://github.com/aidansteele/secretenv/releases/download/0.1.1/secretenv_Linux_x86_64.tar.gz"
+      sha256 "23f3223e90f7debe02bb84583407e5677ea0c287b4a8cf25666cc97c5c0f257b"
     end
     on_arm do
-      url "https://github.com/aidansteele/secretenv/releases/download/0.1/secretenv_Linux_arm64.tar.gz"
-      sha256 "284425b692bb8116aa456d97e59a2f9a9857adfb0a69585e6e33db16b4b41e12"
+      url "https://github.com/aidansteele/secretenv/releases/download/0.1.1/secretenv_Linux_arm64.tar.gz"
+      sha256 "ef97b1a2a095edb2b84c8fd0312fc5129416de678c8510ab7eb8eb6d9dbaba41"
     end
   end
 
